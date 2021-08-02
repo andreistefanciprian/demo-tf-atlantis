@@ -1,0 +1,4 @@
+write-git-creds: true
+repo-config: /repos.yaml
+gh-app-key-file: /app-key-file.pem
+repo-allowlist: github.com/andreistefanciprian/*

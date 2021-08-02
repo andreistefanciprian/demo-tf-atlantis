@@ -7,7 +7,7 @@ This repo describes the Atlantis Setup for running in a GCP VM container.
 ![Atlantis Architecture image](atlantis_architecture.png?raw=true "Atlantis GCP Architecture")
 
 * Atlantis uses server side repo config file, eg: repos.yaml. In this config we can specify the allowed git repos Atlantis will work with and the terraform workflows.
-* On the application repository side we can also have an atlantis.yaml file where repo structure and custom terraform workflows can be defined. These workflows can optionally override the workflows configured in the atlantis [repos.yaml](https://github.com/andreistefanciprian/tf-sample-code/blob/master/atlantis.yaml).
+* On the application repository side we can also have an atlantis.yaml file where repo structure and custom terraform workflows can be defined. These workflows can optionally override the workflows configured in the atlantis [repos.yaml](https://github.com/andreistefanciprian/demo-tf-env/blob/master/atlantis.yaml).
 * The server configuration can be done via flags, env vars or config file. In this setup we're using environment variables that start with ATLANTIS_ string and config file (flags.yaml). [More details about this](https://www.runatlantis.io/docs/server-configuration.html#environment-variables)
 * Atlantis will be secured with HTTPS Load Balancer with IAP enabled (To be done).
 * Terraform state is stored in GCP bucket.

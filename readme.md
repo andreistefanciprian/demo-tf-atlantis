@@ -11,7 +11,8 @@ This repo describes the Atlantis Setup for running in a GCP VM container.
 * The server configuration can be done via flags, env vars or config file. In this setup we're using environment variables that start with ATLANTIS_ string and config file (flags.yaml). [More details about this](https://www.runatlantis.io/docs/server-configuration.html#environment-variables)
 * Atlantis will be secured with HTTPS Load Balancer with IAP enabled (To be done).
 * Terraform state is stored in GCP bucket.
-* [Terraform sample code](https://github.com/andreistefanciprian/tf-sample-code)
+* [Terraform runs from](https://github.com/andreistefanciprian/demo-tf-env)
+* [Terraform sample code](https://github.com/andreistefanciprian/demo-tf-code)
 
 
 ## Build Atlantis VM container
